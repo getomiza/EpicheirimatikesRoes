@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\casalengua\Ineco\getomiza\EpicheirimatikesRoes\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3553884733.index
+519435482.index
+2281481568.index
+802136903.index
+2180417280.index
+2954915911.index
+2768715613.index

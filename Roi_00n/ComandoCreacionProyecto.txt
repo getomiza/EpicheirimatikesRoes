@@ -1,0 +1,33 @@
+--
+-- Listado de los Arquetipos con los que trabaja Maven por mencion o por defecto
+--
+[https://maven.apache.org/archetypes/]
+
+--
+-- Asume las opciones por defectos, sin preguntar nada y creara un proyecto simple
+--
+mvn archetype:generate -DgroupId=com.getomiza.EpicheirimatikesRoes.Roi_001 -DartifactId=App -DinteractiveMode=false
+
+--
+-- Asume las opciones por defectos, sin preguntar para la creacion de un proyecto web
+--
+mvn archetype:generate -DgroupId=com.getomiza.EpicheirimatikesRoes.Roi_001 -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+
+
+--mvn archetype:generate -DgroupId=com.getomiza.EpicheirimatikesRoes.Roi_001 -DartifactId=app -DarchetypeArtifactId=maven.archetype-webapp -DinteractiveMode=false
+--mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DartifactId=app -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+
+
+
+
+mvn -e archetype:generate -DgroupId=com.getomiza.EpicheirimatikesRoes.Roi_001 -DartifactId=app -DarchetypeArtifactId=maven.archetype-webapp -DinteractiveMode=false
+mvn -X archetype:generate -DgroupId=com.getomiza.EpicheirimatikesRoes.Roi_001 -DartifactId=app -DarchetypeArtifactId=maven.archetype-webapp -DinteractiveMode=false
+
+mvn -e -X archetype:generate -DgroupId=com.getomiza.EpicheirimatikesRoes.Roi_001  -DartifactId=app -DarchetypeArtifactId=maven.archetype-webapp -DinteractiveMode=false
+
+
+--
+-- Asume las opciones por defectos, sin preguntar para la creacion de un proyecto j2EE
+--
+mvn archetype:generate -DgroupId=com.getomiza.EpicheirimatikesRoes.Tique_001 -DartifactId=maven-archetype-j2ee-simple -DinteractiveMode=false
+

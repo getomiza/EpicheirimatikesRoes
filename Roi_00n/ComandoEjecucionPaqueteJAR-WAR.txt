@@ -1,0 +1,16 @@
+--
+-- Ejecucion del programa por invocacion del fichero  *.jar del subdirectorio correspondiente en la residencia del proyecto
+--
+java -cp App-1.0-SNAPSHOT.jar com.getomiza.EpicheirimatikesRoes.Roi_001.App
+
+--
+--
+--
+java -cp App.war com.getomiza.EpicheirimatikesRoes.Roi_001.App
+
+
+java -cp app.war com.getomiza.EpicheirimatikesRoes.Roi_001.App
+java -cp app.war com.getomiza.EpicheirimatikesRoes.Roi_001.index.jsp
+
+
+

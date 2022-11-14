@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Definiciones Específicas del Proyecto Roi_001 -->
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.getomiza.Diafora.Roi_001</groupId>
+	<artifactId>App</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>App</name>
+	
+	<!--
+	<url>http://www.autentia.com</url>
+	-->
+
+	<!-- Definicion del repositorio de obtención del arquetipo usado para la creacion del proyecto --> 			  		
+	<url>http://maven.apache.org</url>
+
+	<!-- Definición de un conjunto de librerias que se utilizarán para la generacion de fichero JAR del Proyecto Vrochous_026 -->
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>              					<!-- Grupo de trabajo de las Librerias de Test JUnit -->
+			<artifactId>junit</artifactId>        					<!-- Dependencia de las Librerias de Test JUnit -->
+			<version>3.8.1</version>              					<!-- Version de las Librerias de Test JUnit -->
+			<scope>test</scope>                   					<!-- Ambito de trabajo y Uso de las Librerias de Test JUnit -->
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
+		<dependency>
+			<groupId>org.springframework.webflow</groupId>			<!-- Grupo de trabajo de las Librerias de Spring Web Flow -->
+			<artifactId>org.springframework.webflow</artifactId>	<!-- Dependencia de las Librerias de Spring Web Flow -->
+			<version>2.5.1.RELEASE</version>						<!-- Version de las Librerias de Spring Web Flow -->
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.webflow</groupId>			<!-- Grupo de trabajo de las Librerias de Spring Web Flow -->
+			<artifactId>org.springframework.faces</artifactId>		<!-- Dependencia de las Librerias de Spring Faces -->
+			<version>2.5.1.RELEASE</version>						<!-- Version de las Librerias de Spring Faces -->
+		</dependency>
+	</dependencies>
+
+	<!-- -->	
+	<build>
+		<finalName>TutorialSWF</finalName>
+	</build>
+	
+	<!-- -->
+	<repositories>
+		<!-- -->
+		<repository>
+			<id>com.springsource.repository.bundles.release</id>
+			<name>SpringSource Enterprise Bundle Repository - SpringSource Releases</name>
+			<!--<url>http://repository.springsource.com/maven/bundles/release</url>-->
+			<url>http://repository.springsource.com/maven/bundles/release/</url>
+			<url>http://repository.springsource.com/maven/libraries/release/</url>
+		</repository>
+		
+		<!-- -->
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Releases</name>
+			<!--<url>http://repository.springsource.com/maven/bundles/external</url>-->
+			<url>http://repository.springsource.com/maven/bundles/external/</url>
+			<url>http://repository.springsource.com/maven/libraries/external/</url>
+		</repository>
+	</repositories>
+	
+	<!-- Generar el javadoc -->
+	<reporting>
+		<plugins>
+      		<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-javadoc-plugin</artifactId>
+      		</plugin>
+    	</plugins>
+	</reporting>  
+	
+</project>
